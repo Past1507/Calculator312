@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultPanel"
+        style="@style/resultPanel"
+        android:text="@string/text_0" />
+
+    <LinearLayout
+        android:id="@+id/line_actions"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/resultPanel">
+
+        <TextView
+            android:id="@+id/btn_division"
+            style="@style/btn_actions"
+            android:text="@string/text_division" />
+
+        <TextView
+            android:id="@+id/btn_multiplication"
+            style="@style/btn_actions"
+            android:text="@string/text_multiplication" />
+
+        <TextView
+            android:id="@+id/btn_minus"
+            style="@style/btn_actions"
+            android:text="@string/text_minus" />
+
+        <TextView
+            android:id="@+id/btn_plus"
+            style="@style/btn_actions"
+            android:text="@string/text_plus" />
+
+        <TextView
+            android:id="@+id/btn_equal"
+            style="@style/btn_actions"
+            android:text="@string/text_equal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_0"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/line_1"
+        android:layout_toStartOf="@id/line_actions">
+
+        <TextView
+            android:id="@+id/btn_c"
+            style="@style/btn_actions"
+            android:text="@string/text_c" />
+
+        <TextView
+            android:id="@+id/btn_change"
+            style="@style/btn_actions"
+            android:text="@string/text_change" />
+
+        <TextView
+            android:id="@+id/btn_percent"
+            style="@style/btn_actions"
+            android:text="@string/text_percent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/line_2"
+        android:layout_toStartOf="@id/line_actions">
+
+        <TextView
+            android:id="@+id/btn_7"
+            style="@style/btn"
+            android:text="@string/btn_7" />
+
+        <TextView
+            android:id="@+id/btn_8"
+            style="@style/btn"
+            android:text="@string/btn_8" />
+
+        <TextView
+            android:id="@+id/btn_9"
+            style="@style/btn"
+            android:text="@string/btn_9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/line_3"
+        android:layout_toStartOf="@+id/line_actions">
+
+        <TextView
+            android:id="@+id/btn_4"
+            style="@style/btn"
+            android:text="@string/btn_4" />
+
+        <TextView
+            android:id="@+id/btn_5"
+            style="@style/btn"
+            android:text="@string/btn_5" />
+
+        <TextView
+            android:id="@+id/btn_6"
+            style="@style/btn"
+            android:text="@string/btn_6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above ="@+id/line_4"
+        android:layout_toStartOf="@+id/line_actions">
+
+        <TextView
+            android:id="@+id/btn_1"
+            style="@style/btn"
+            android:text="@string/btn_1" />
+
+        <TextView
+            android:id="@+id/btn_2"
+            style="@style/btn"
+            android:text="@string/btn_2" />
+
+        <TextView
+            android:id="@+id/btn_3"
+            style="@style/btn"
+            android:text="@string/btn_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/line_actions">
+
+        <TextView
+            android:id="@+id/btn_0"
+            style="@style/btn"
+            android:text="@string/text_0" />
+
+        <TextView
+            android:id="@+id/btn_point"
+            style="@style/btn_point"
+            android:gravity="center"
+            android:text="@string/text_point" />
+    </LinearLayout>
+</RelativeLayout>
