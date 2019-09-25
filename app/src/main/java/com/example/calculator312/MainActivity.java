@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView btn_point;
     private TextView btn_c;
     private TextView btn_change;
+    private TextView btn_percent;
     private TextView btn_division;
     private TextView btn_multiplication;
     private TextView btn_minus;
@@ -126,6 +127,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        btn_percent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String resultText = result.getText().toString();
+                double value = Double.parseDouble(resultText);
+                double desired = value*0.01;
+                result.setText(Double.toString(desired));
+            }
+        });
         btn_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -222,6 +232,7 @@ public class MainActivity extends AppCompatActivity {
         btn_point=findViewById(R.id.btn_point);
         btn_c = findViewById(R.id.btn_c);
         btn_change = findViewById(R.id.btn_change);
+        btn_percent = findViewById(R.id.btn_percent);
         btn_division = findViewById(R.id.btn_division);
         btn_multiplication= findViewById(R.id.btn_multiplication);
         btn_minus = findViewById(R.id.btn_minus);
